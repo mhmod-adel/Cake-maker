@@ -1,0 +1,1463 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'segoe ui light';
+ 
+}
+
+.clear
+{
+   clear:both;
+}
+
+body
+{
+    transition:all 2s;
+}
+.container
+{
+   width: 90%;
+   margin: auto;
+   padding:0 10px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+.home
+{
+    background-image:url(../imgs/headerBcg.jpeg);
+    background-size:100% 100%;
+    
+    background-attachment: fixed;
+}
+
+.overlay
+{
+    height: 100%;
+    background-color:rgba(0,0,0,.3);
+}
+
+.nav
+{
+    background-color:rgba(0,0,0,0.8);
+    overflow: visible;
+    height: 90px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+     
+     
+}
+.nav .container
+{
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbar-icon
+{
+  padding-top: 20px;
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+}
+.navbar-icon i
+{
+  color: #f1f1f1;
+  font-size: 30px;
+ 
+}
+
+.nav ul
+{
+    list-style-type: none; 
+    float:right;
+}
+
+.nav ul li
+{
+    float: left;
+    padding:20px 15px;
+    letter-spacing:1px;
+}
+.home-nav
+{
+  border-radius: 50%;
+  background-color: palevioletred;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+  
+  
+}
+.nav ul li:hover
+{
+    font-size: 18;
+    border-bottom:2px solid palevioletred ;
+}
+.nav ul li a
+{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    font-weight:600;
+    font-size: 16px;
+    text-transform:uppercase;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 0px !important;
+   
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  
+ 
+}
+.dropdown-content a
+{
+  color: #000 !important;
+border-bottom:1px solid rebeccapurple;
+ 
+  text-align: center;
+}
+.user-icon
+{
+ color: palevioletred;
+ font-size: 35px;
+ background-color: papayawhip;
+ padding: 5px 15px 5px 15;
+ border-radius: 50%;
+}
+.user-icon:hover
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav .logo
+{
+    float:left;
+    padding: 25px 0 10px 0 ;
+}
+
+.nav .logo img
+{
+    width:120px;
+    height:40px;
+}
+
+.nav ul .btn
+{
+    padding:15px 25px;
+    
+     
+    background-color:#FFF;
+    color:#333;
+    border-radius: 10px;
+}
+.bttn
+{
+    padding:15px 40px;
+    margin: 40px 20px;
+     
+    background-color:palevioletred;
+    color:#333;
+    border-radius: 10px;
+}
+.btn-bdr
+{
+    padding-top: 15px !important;
+    padding-left: 50px !important;
+    border-bottom: none !important;
+}
+
+.nav ul .btn:hover
+{
+    background-color: rgba(0,0,0,.7);
+    color:#FFF;
+    border-bottom: none !important;
+}
+.contact-brdr
+{
+    border: 3px solid palevioletred ;
+    border-radius: 15px;
+    padding: 10px 5px 4px 5px !important;
+    margin-top: 20px !important;
+    margin-left: 20px;
+    margin-right: 50px;
+
+
+}
+.icon 
+{
+    font-size: 20px;
+    color: palevioletred;
+}
+.contact-brdr:hover
+{
+    background-color: black;
+    color: #FFF !important;
+}
+
+.icon:hover{
+    color: #FFF;
+}
+.caption
+{
+    padding-top:15%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15%;
+    color: palevioletred;
+}
+
+.cap-lett
+{
+    margin-bottom:45px;
+    color: palevioletred;
+    font-weight: 900px;
+    font-size: 100px;
+    font-family: 'Yuji Hentaigana Akari', cursive;
+}
+.cap-lett:hover
+{
+     cursor: pointer;
+      color: #FFF;
+      font-size: 80px;
+}
+
+.caption h1
+{
+    margin-bottom: 60px;
+    padding-left:40px;
+    padding-right: 40px;
+    font-weight: 400px;
+    color: #FFF;
+    font-family: 'open sans', arial;
+    font-style: normal;
+    font-size:40px;
+}
+
+.caption button
+{
+    padding:20px 15px;
+    border:none;
+    border-radius:2px;
+    background-color:palevioletred;
+    color:#FFF;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size:14px;
+}
+
+.caption button:hover
+{
+    background-color: #FFF;
+    color:#000;
+    cursor:pointer;
+     
+}
+section {
+    width: 100%;
+    
+    background-image: url('../imgs/servicesBcg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+  
+  }
+  .container-cakes
+  {
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+     
+    justify-content: center;
+  }
+  .cake
+  { color: #000;
+    text-decoration: none;
+    
+    font-size: 22px;
+  }
+  .cake .img-cont
+  {
+     text-align: center;
+  }
+.cake h1
+{
+  text-align: center;
+  color: #fff;
+ 
+  
+}
+.cake p
+{
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+   padding: 20px;
+}
+  
+  .footer-distributed{
+      background: #342526;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: bold 16px sans-serif;
+      padding: 55px 50px;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+      display: inline-block;
+      vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+      width: 40%;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+      color:  #ffffff;
+      font: normal 36px 'Open Sans', cursive;
+      margin: 0;
+  }
+  
+  .footer-distributed h3 span{
+      color:  palevioletred;
+      font-weight: 900;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+      color:  #ffffff;
+      margin: 20px 0 12px;
+      padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+      display:inline-block;
+      line-height: 1.8;
+    font-weight:400;
+      text-decoration: none;
+      color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+      color:  #222;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+      width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+      background-color:  #33383b;
+      color: #ffffff;
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+      font-size: 22px;
+      line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+      display: inline-block;
+      color: #ffffff;
+    font-weight:400;
+      vertical-align: middle;
+      margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+      display:block;
+      font-weight: normal;
+      font-size:14px;
+      line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+      color:  palevioletred;
+      text-decoration: none;;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+      width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+      line-height: 20px;
+      color:  #92999f;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+      display: block;
+      color:  #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+      margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      background-color:  #33383b;
+      border-radius: 5px;
+  
+      font-size: 25px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+  
+      margin-right: 3px;
+      margin-bottom: 5px;
+  }
+  footer .foot-icon:hover
+  {
+      color: palevioletred;
+  }
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 880px) {
+  
+      .footer-distributed{
+          font: bold 14px sans-serif;
+      }
+  
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right{
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+          text-align: center;
+      }
+  
+      .footer-distributed .footer-center i{
+          margin-left: 0;
+      }
+  
+  }
+  
+/* -----------------end of home page--------------*/
+
+
+
+/*-------------------sign in page-------------------------------*
+/* Bordered form */
+
+.contaner-sign
+{
+  width: 70%;
+  margin: auto;
+}
+
+
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .pswd
+  {
+      margin-bottom:30px !important ;
+  }
+  .check
+  {
+      margin: 30px  0px 0px 0px;
+  }
+  .submit {
+    background-color: palevioletred;
+    color: white;
+    padding: 14px 20px;
+  
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    margin: auto;
+  }
+  
+  /* Add a hover effect for buttons */
+  .submit:hover {
+    background-color:#314059 ;
+    color: #b09390;
+    
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 5px 30px;
+    background-color: #f44336;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+  }
+  .cancelbtn:hover
+  {
+      opacity: 0.7;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  img.avatar:hover
+  {    transition: all 2s;
+      transform: rotate(360deg) scale(1.2);
+
+       
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 30%px;
+
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  /*--------------------------------- sign up page-----------------------------------------------------------------*/
+  
+  .signup-cap1
+  {
+      font-size: 40px;
+      text-align: center;
+      font-weight: 900;
+  }
+  .signup-cap2
+  {
+      font-size: 24px;
+      text-align: center;
+  }
+  .signup-cap3
+  {
+      font-size: 19px;
+      
+  }
+
+
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 2px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for all buttons */
+  .signup2-btn ,.signup1-btn {
+    background-color: palevioletred;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 22px;
+  }
+  
+  .signup1-btn:hover
+  {
+    opacity:0.7;  
+  }
+  .signup2-btn:hover {
+    opacity:0.7;
+    text-decoration: none;
+  }
+  
+  /* Extra styles for the cancel button */
+  .signup1-btn {
+    padding: 14px 20px;
+    background-color: #f44336;
+     
+  }
+  .signup2-btn {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+     
+  }
+  /* Float cancel and signup buttons and add an equal width */
+  .signup2-btn ,.signup1-btn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+  }
+  /*--------------------------------contact page----------------------*/
+ 
+.contact-cap h1{
+  font-size: 50px;
+  font-weight: 900px;
+
+  color: darkgray;
+  }
+  .contact-cap h1 span
+  {
+    color: palevioletred;
+  }
+  .contact-cap p{
+    font-size: 20px;
+    font-weight: 900px;
+
+    color: darkgray;
+    }
+    .cont-cap
+    {
+      text-align: left;
+      padding: 80px 0px 40px 50px;
+       
+      
+      
+
+    } 
+     
+ /* Style inputs */
+ .form-contact
+ {
+   border: none;
+    
+ }
+ .form-contact label
+ {
+   font-weight: 900;
+ }
+ .form-contact label:hover
+ {
+   color: #FFF;
+   text-shadow: 2px 2px 4px #000000;
+    
+ }
+ 
+ .contact-inputs {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #f1f1f1;
+  color: #000;
+  font-weight: 900;
+}
+
+.submit{
+  background-color:palevioletred ;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.submit:hover {
+  background-color: #33383b ;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Style the container/contact section */
+.container-contacts{
+  
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: lightblue;
+  background-attachment: fixed;
+  margin-top: 100px !important;
+  margin-bottom: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+  font-size: 20px;
+   
+
+}
+.container-contacts h2
+{
+  color: #f1f1f1;
+  font-size: 70px;
+  font-family: 'Pushster', cursive;
+  text-shadow: 2px 2px 4px #000000;
+}
+.container-contacts h2 span
+{
+  color: palevioletred;
+  font-size: 90px;
+}
+.container-contacts p
+{
+  font-size: 24px;
+  font-family: 'Vujahday Script', cursive;
+  color: rgba(0,0,0,.5);
+}
+
+/* Create two columns that float next to eachother */
+.column1  {
+  float: left;
+  width: 50%;
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  
+}
+.cont-cap
+{
+  font-family: 'Vujahday Script', cursive;
+}
+.cont-cap span
+{
+  font-size: 35px;
+  color: rgba(0,0,0,0.8);
+}
+.cont-cap i:hover
+{
+  font-size: 35px;
+  color: #FFF
+}
+
+.column1 p{
+  font-size: 20px !important;
+}
+.column2 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+ 
+/*------------------------------about page------*/
+
+.container-about
+{
+  width: 90%;
+  margin: auto;
+  padding: 20px 0px 30px 0px;
+  margin-bottom: 50px;
+}
+.about-caption
+{
+  width: 55%;
+  float: left;
+
+}
+.about-img
+{
+  width: 40%;
+  float: left;
+  border: 10px solid palevioletred;
+  border-radius: 5px;
+   
+}
+.about-img:hover
+{
+  transition: all 1.2s;
+  border: 0px solid  palevioletred;
+}
+.img-border
+{    
+  
+    position: relative;
+    top: 20px;
+    left: 20px;
+
+}
+.about-img img
+{
+ width: 100%;
+ border-radius: 5px;
+  
+  
+}
+.img-border:hover
+{
+  transition: all 0.7s;
+    
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.about-caption
+{
+  padding: 30px 10px 0px 20px;
+  
+}
+.about-caption h1{
+  font-size: 80px;
+  font-family: 'Pushster', cursive;
+}
+
+.about-caption h1 span{
+  font-size: 80px;
+  font-family: 'Pushster', cursive;
+  color: palevioletred;
+}
+.about-caption p{
+  font-size: 20px;
+  font-family: 'Pushster', cursive;
+  color: black;
+}
+/*---------------------------------shop page-------------------------------------*/
+.shop{
+  background-color:  rgb(238, 238, 238);
+}
+.shop-container
+{
+  width: 90%;
+  padding-left: 20px;
+  margin: auto;
+  text-align: center;
+  background-color:  rgb(238, 238, 238);
+}
+.shop-container h1
+{
+  font-size: 60px;
+  font-family: 'Pushster', cursive;
+
+}
+.shop-container h1 span
+{
+  font-size: 80px;
+  font-family: 'Pushster', cursive;
+  color: palevioletred;
+}
+
+.btn-container
+{
+  width:80% ;
+  margin:auto ;
+  display: flex;
+  justify-content:space-around;
+   
+  padding: 15px;
+}
+.btn-container button
+{
+  padding: 1px 15px;
+  margin: 10px;
+  font-size: 20px;
+  font-family: 'Pushster', cursive;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 3px;
+
+}
+.btn-container button:hover
+{
+  color: palevioletred;
+  background-color: #000;
+}
+
+
+
+
+
+.example
+{
+  border: none;
+  width: 70%;
+  margin: auto;
+}
+.example input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  background-color: rgba(0,0,0,.9);
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+/* When the input field gets focus, change its width to 100% */
+.example input[type=text]:focus {
+  width: 100%;
+}
+
+.cards
+{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+   
+}
+.card
+{
+  width: 29%;
+  border-radius: 5px;
+  margin: 20px;
+}
+.card:hover
+{ 
+   transition: all 0.5s;
+   box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.7);
+}
+
+.imag-cont
+{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+
+}
+.imag-cont img
+{
+  width: 100%;
+  border-radius: 3px;
+}
+.imag-cont img:hover
+{
+  transition: all 1.5s;
+  transform: scale(1.5);
+  border-radius: 3px;
+  cursor: pointer;
+  
+}
+.card-cap
+{width: 100%;
+  margin:auto ;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+  background-color:#fff ;
+  
+}
+.card-cap p
+{
+  font-family: 'Yuji Hentaigana Akari', cursive;
+}
+.shop-cakes
+{
+   height: 70vh;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding:20px ;
+  font-family: 'Vujahday Script', cursive !important;
+  text-align: center;
+}
+.shop-cakes .cake
+{
+   
+  background-color: rgb(238, 238, 238);
+  padding: 30px;
+  margin: 30px;
+  box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.7);
+  transform: rotate(10deg);
+   
+}
+.shop-cakes .cake:hover
+{ 
+  transition: all 1s;
+  transform: rotate(0deg);
+  transform: scale(1.2);
+  z-index: 12;
+}
+.shop-cakes img
+{
+  width:90px;
+  height: 120px;
+
+
+}
+.shop-cakes img:hover
+{
+  transition: all 2s;
+  transform: rotate(360deg);  
+   
+}
+.shop-cakes h1
+{
+  color: #000;
+  font-family: 'Vujahday Script', cursive !important;
+  font-size: 40px;
+
+}
+.shop-cakes p
+{
+  color: rgba(0,0,0,.6);
+  font-family: 'Yuji Hentaigana Akari', cursive;
+  font-size: 16px;
+  text-align: center;
+  padding:10px 40px 20px 40px;
+  font-family: 'Vujahday Script', cursive !important;
+
+}
+.shop-cakes a
+{
+   text-decoration: none;
+   border: 1px solid #000;
+   border-radius: 4px;
+   color: palevioletred;
+   padding: 2px 10px;
+    
+   text-align: center;
+   font-weight: 400;
+   font-family: 'Vujahday Script', cursive;
+}
+.shop-cakes a:hover
+{
+   text-decoration: none;
+   border: 1px solid #000;
+   border-radius: 4px;
+   color: palevioletred;
+   background-color:#000;  
+   font-family: 'Vujahday Script', cursive;
+   font-weight: 300;
+    
+}
+/*-----------------------------------------------------shop cart page---------------------------------*/
+
+.shop-carts
+{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+
+}
+.header-cart
+{
+   
+  margin: auto;
+  width: 22%;
+  text-align: center;
+}
+.shop-carts h1
+{
+   text-align: center;
+   font-size: 60px;
+   padding: 20px 0 20px 0;   
+}
+.shop-carts h1 span
+{
+  text-align: center;
+  font-size: 80px;
+  color: palevioletred;
+  margin: auto;
+}
+.shop-carts .hr
+{
+  background-color: palevioletred;
+  height: 6px;
+  width: 100%;
+
+}
+.cart 
+{
+  display: flex;
+  justify-content: start;
+}
+.cart .cart-img
+{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.cart .cart-img img
+{
+  width: 80%;
+  height: 220px;
+}
+.fasl
+{
+  width: 4px;
+  height: 220px;
+  background-color: rgba(0,0,0,.5);
+  margin: 5px;
+}
+.cart .cart-cap
+{
+  width: 30%;
+  text-align: left;
+  padding: 20px;
+}
+.cart .cart-cap h3 
+{
+ color: #000;
+ font-weight: 900;
+ font-size: 22px;
+}
+.cart .cart-cap h3 span 
+{
+ color: rgba(0,0,0,.8);
+ font-weight: 900;
+ font-size: 20px;
+}
+.cart .cart-cap p span 
+{
+ color: rgba(0,0,0,1);
+ font-weight: 900;
+ font-size: 22px;
+}
+.cart .cart-cap p
+{
+ color: rgba(0,0,0,.8);
+ font-weight: 600;
+ font-size: 18px;
+}
+.amount-form
+{
+   border: none;
+   font-size: 22px;
+}
+.amount-form label span
+{
+  font-size: 16px;
+  font-weight: 400;
+}
+.amount-form label
+{
+  font-size: 22px;
+  font-weight: 800;
+}
+.amount-form input[type="number"]
+{
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 900;
+  border: 2px solid rgba(0,0,0,.7);
+  border-radius: 10%;
+}
+.amount-form input[type="submit"]
+{
+  padding:10px 20px;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: palevioletred;
+   border: none;
+  border-radius: 2px;
+}
+.amount-form input[type="submit"]:hover
+{
+  background-color: #fff;
+  border: 1px solid palevioletred;
+  color: palevioletred;
+  cursor: pointer;
+}
+.cart-total
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.cart-total h2
+{
+  font-family: 'Pushster', cursive;
+  font-size: 30px;
+}
+@media screen and (max-width: 1250px)
+{
+  .nav ul li
+{
+    float: left;
+    padding:20px 5px;
+    letter-spacing:1px;
+}
+.contact-brdr
+{
+    border: 3px solid palevioletred ;
+    border-radius: 15px;
+    padding: 10px 5px 4px 5px !important;
+    margin-top: 20px !important;
+    margin-left: 10px;
+    margin-right: 30px;
+
+
+}
+
+}
+@media screen and (max-width: 1055px) {
+  .column1 
+  {
+    width: 40%;
+    font-size: 18px;
+    padding: 5px;
+  }
+  .column2
+  {
+    width: 60%;
+  }
+
+  .cake p
+{
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+   padding: 20px;
+}
+  
+
+  .about-caption
+{
+  width: 50%;
+  float: left;
+
+}
+.about-caption p
+{
+  font-size: 16px;
+
+}
+.about-img
+{
+  width: 50%;
+  float: left;
+  border: 10px solid palevioletred;
+  border-radius: 5px;
+   
+}
+  .nav ul {
+    display: none;
+    border: none !important;
+    background-color: transparent;
+  }
+  .navbar-icon 
+  {
+    display: block;
+  }
+  .navbar-icon i 
+  {
+    color: palevioletred;
+    cursor: pointer;
+  }
+
+  .nav .container
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav .logo
+  {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 890px){
+  .container-contacts h2
+{
+  color: #f1f1f1;
+  font-size: 60px;
+  font-family: 'Pushster', cursive;
+  text-shadow: 2px 2px 4px #000000;
+}
+.container-contacts h2 span
+{
+  color: palevioletred;
+  font-size: 80px;
+}
+  .column1 
+  {
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+  }
+  .column2
+  {
+    width: 100%;
+  }
+  .about-caption
+  {
+    width: 100%;
+    float: left;
+  
+  }
+  .about-caption p
+  {
+    font-size: 16px;
+  
+  }
+  .about-img
+  {
+    width: 100%;
+    float: left;
+    border: 10px solid palevioletred;
+    border-radius: 5px;
+     
+  }
+}
+.nav2
+{
+  display: none;
+  background-color: rgba(0,0,0,.7);
+  position: fixed;
+  top: 92px;
+  right: 0px;
+}
+ul.nav2 
+{
+  list-style-type: none;
+}
+.nav2 li
+{
+  padding: 10px 15px;
+  letter-spacing:1px;
+}
+.nav2 a
+{
+  text-decoration: none;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #ccc;
+}
+.nav2 a:hover
+{
+  background-color: palevioletred;
+}
+
+
+
+
+ 
+
+ 
